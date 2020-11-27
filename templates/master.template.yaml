@@ -50,6 +50,12 @@ Metadata:
         default: Region of Quickstart bucket
       QSS3KeyPrefix:
         default: S3 prefix where you want to sync you git Repo
+      ModeOfOperation:
+        default: Audio File or Metadata
+      MetadataOrAudioSuffix:
+        default: Suffix for target file
+      AudioFileJsonPath: 
+        default: path to audio file if in metadata mode
       
 Parameters:
   AgentChannel:
@@ -117,6 +123,18 @@ Parameters:
     Description: The S3 key name prefix used for your copy of Quick Start assets
     Default: quickstart-onica-post-call-analytics/
     AllowedPattern: ^[0-9a-zA-Z-/]*$
+  ModeOfOperation:
+    Type: String
+    Description: The Mode of Operation( AUDIO or METADATA)
+    Default: 'AUDIO'
+  MetadataOrAudioSuffix:
+    Type: String
+    Description: The suffix for the target metadata or audio file
+    Default: ''
+  AudioFileJsonPath:
+    Type: String
+    Description: Json path to audio file in metadata if in metadata mode
+    Default: ''
 
 Conditions:
   UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-quickstart']
@@ -224,6 +242,9 @@ Resources:
         NotificationEmail: !Ref NotificationEmail
         AgentChannel: !Ref AgentChannel
         AgentSpeakerLabel: !Ref AgentSpeakerLabel
+        ModeOfOperation: !Ref ModeOfOperation
+        MetadataOrAudioSuffix: !Ref MetadataOrAudioSuffix
+        AudioFileJsonPath: !Ref AudioFileJsonPath
   DeployInfrastructureStack:
     Type: AWS::CloudFormation::Stack
     DependsOn:
