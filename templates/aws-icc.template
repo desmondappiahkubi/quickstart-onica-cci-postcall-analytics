@@ -35,6 +35,15 @@
             }, 
             "TABLE_NAME": {
               "Ref": "StatusTable"
+            }, 
+            "MODE_OF_OPERATION": {
+              "Ref": "ModeOfOperation"
+            }, 
+            "AUDIO_FILE_PATH": {
+              "Ref": "AudioFileJsonPath"
+            }, 
+            "METADATA_AUDIO_SUFFIX": {
+              "Ref": "MetadataOrAudioSuffix"
             }
           }
         }
@@ -43,14 +52,14 @@
         "TranscribeS3DynamoDBRole"
       ]
     }, 
-    "TranscribeJobProducerLambdaVersionfGLx0AoPFXO114mX2dmWys1vEpHYySjKOrrvKeZ7QWE": {
+    "TranscribeJobProducerLambdaVersion6Bz3RT9AzVYZGm8VvNpvb8fykHj73iuXjduJrTvbls": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "TranscribeJobProducerLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "SplitTranscriptLambdaFunction": {
@@ -97,14 +106,14 @@
         "TranscriptSplitterRole"
       ]
     }, 
-    "SplitTranscriptLambdaVersionrLyQ2ZKcXGYpwxvQZsgLtrcJb30tLHxFnwArv9rLzzE": {
+    "SplitTranscriptLambdaVersionfwv3OnZcTM1snBDGtXtZPq2OcUjgEPlSuwqQ5xzzv0": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "SplitTranscriptLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "AnalyseTextLambdaFunction": {
@@ -184,14 +193,14 @@
         "ComprehendFullAccessRole"
       ]
     }, 
-    "AnalyseTextLambdaVersionTSZbL78hOevLeFM3N3zDhcMRErBRlAWf94wGYnhsYg": {
+    "AnalyseTextLambdaVersionRnfAyZTCDJcIT99Q8TFVFCuM49dLHbDmX3BvKvNc": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "AnalyseTextLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "GetTranscriptsLambdaFunction": {
@@ -235,14 +244,14 @@
         "ScanTranscriptsRole"
       ]
     }, 
-    "GetTranscriptsLambdaVersionYSS8oELNWGIpTOJ026iqhKtnOvs7letFaxlAKPcY": {
+    "GetTranscriptsLambdaVersionLB9w7S8PjEZTiQ8Ln6xlLBcbo2uzyqNu6mzJUOQpU": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "GetTranscriptsLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "GetAudioLambdaFunction": {
@@ -289,14 +298,14 @@
         "TranscriptionAudioFilesRole"
       ]
     }, 
-    "GetAudioLambdaVersiono8FzcNaO5OrCSSfFtaXhDMcclWN5xACUuARyTQ5dq8": {
+    "GetAudioLambdaVersion7olk5oof3tFAF9Hck9fOAhqtgsyoNKu7YWY8KUVAnc": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "GetAudioLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "GetSentimentLambdaFunction": {
@@ -343,14 +352,14 @@
         "GetSentimentsRole"
       ]
     }, 
-    "GetSentimentLambdaVersiongaTFSbZSdNBldxy3gevybaQpebE3JVV5btCfKIw": {
+    "GetSentimentLambdaVersionAooSDnNc7RsqVAcNBxSZX3bEHU1rFkZz80aLaeVIs": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "GetSentimentLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "GetPresignedUrlLambdaFunction": {
@@ -409,14 +418,14 @@
         "TranscriptionAudioFilesRole"
       ]
     }, 
-    "GetPresignedUrlLambdaVersionlRbzvPOpI7IfpP2VlZHzgu8b3sD7JfW4BVwBt3jM4qg": {
+    "GetPresignedUrlLambdaVersiontzP5WWT0NAhi6sTVSm8IuxWoE9uFnp1KgDpDVM8Wo": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "GetPresignedUrlLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "UpdateStatusLambdaFunction": {
@@ -466,14 +475,14 @@
         "DynamoBatchWriteRole"
       ]
     }, 
-    "UpdateStatusLambdaVersion0IXiBdEpL8pfPOs18gCd4hLBVJi3vC7JeVm0AWGiHKk": {
+    "UpdateStatusLambdaVersion68v0l56j2rgw4WTjK7Oae9G7zIAhOtFpxU8a1PHsY": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateStatusLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "QuickSightFederationFunctionLambdaFunction": {
@@ -508,14 +517,14 @@
         "LambdaBasicExecutionRole"
       ]
     }, 
-    "QuickSightFederationFunctionLambdaVersionJkkPej4bt8CRLSeWtJWlk2KGkptHKVSpTEmE5WqDoQ": {
+    "QuickSightFederationFunctionLambdaVersionfYUbzbyyQv20fNXdo0ZH6t1rSbz61UxT3kDnOg8A": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "QuickSightFederationFunctionLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "CreateCallResolutionClassiferLambdaFunction": {
@@ -571,14 +580,14 @@
         "ComprehendFullAccessRole"
       ]
     }, 
-    "CreateCallResolutionClassiferLambdaVersionN4CPSBudK2f1SorGgqmcrN1Zj0tbtYgPvZsio2Rg": {
+    "CreateCallResolutionClassiferLambdaVersionEOZnnpqbYi0N8AcoSkhsPTgbC3I4Jcp5OGr7xSgLg": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "CreateCallResolutionClassiferLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "CreateCallMotivationClassifierLambdaFunction": {
@@ -634,14 +643,14 @@
         "ComprehendFullAccessRole"
       ]
     }, 
-    "CreateCallMotivationClassifierLambdaVersionwpMOUxEI0lCOg3b4wGHUqfa5fV0A7gJsUP5xnekQxAc": {
+    "CreateCallMotivationClassifierLambdaVersionBmCY5HQ00332pKW4qjbe2rZQeVpPuYxq24dPjSU": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "CreateCallMotivationClassifierLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "CreateCallResolutionEndpointLambdaFunction": {
@@ -696,14 +705,14 @@
         "ComprehendFullAccessRole"
       ]
     }, 
-    "CreateCallResolutionEndpointLambdaVersion1AdWN6vbKQbhOiHa42tmeWUBjVB0H3rjJstM6SxeNY": {
+    "CreateCallResolutionEndpointLambdaVersion1gjMjdfDsIxDOWQSHAhhWBNcgseqD7hz7E1bYx0Jms": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "CreateCallResolutionEndpointLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "CreateCallMotivationEndpointLambdaFunction": {
@@ -758,14 +767,14 @@
         "ComprehendFullAccessRole"
       ]
     }, 
-    "CreateCallMotivationEndpointLambdaVersiongEAG5FmlWvewm7N9uVetPhOPpuuoT0tEFLMe8Kk8": {
+    "CreateCallMotivationEndpointLambdaVersion0fpOI9EivyJmigJT5uo1vMRnGYYvYrlkjcq54Lys": {
       "Type": "AWS::Lambda::Version", 
       "DeletionPolicy": "Retain", 
       "Properties": {
         "FunctionName": {
           "Ref": "CreateCallMotivationEndpointLambdaFunction"
         }, 
-        "CodeSha256": "j2fdpw9gr6b3XfBGdgbvUmWolGXCcxXl23wL7zosnBk="
+        "CodeSha256": "2HlBJk4axMn7nlK9FGPe0F9DnqVXQRtomisjbMnk3UU="
       }
     }, 
     "CreateCallResolutionEndpointEventsRuleSchedule1": {
@@ -842,39 +851,12 @@
         }
       }
     }, 
-    "TranscribeJobProducerCustomS31": {
-      "Type": "Custom::S3", 
-      "Version": 1, 
-      "DependsOn": [
-        "TranscribeJobProducerLambdaFunction", 
-        "CustomDashresourceDashexistingDashs3LambdaFunction"
-      ], 
-      "Properties": {
-        "ServiceToken": {
-          "Fn::GetAtt": [
-            "CustomDashresourceDashexistingDashs3LambdaFunction", 
-            "Arn"
-          ]
-        }, 
-        "FunctionName": "aws-icc-dev-transcribeJobProducer", 
-        "BucketName": {
-          "Ref": "TranscriptionAudioFiles"
-        }, 
-        "BucketConfigs": [
-          {
-            "Event": "s3:ObjectCreated:*", 
-            "Rules": []
-          }
-        ]
-      }
-    }, 
     "SplitTranscriptCustomS31": {
       "Type": "Custom::S3", 
       "Version": 1, 
       "DependsOn": [
         "SplitTranscriptLambdaFunction", 
-        "CustomDashresourceDashexistingDashs3LambdaFunction", 
-        "TranscribeJobProducerCustomS31"
+        "CustomDashresourceDashexistingDashs3LambdaFunction"
       ], 
       "Properties": {
         "ServiceToken": {
@@ -1010,57 +992,6 @@
             "PolicyDocument": {
               "Version": "2012-10-17", 
               "Statement": [
-                {
-                  "Effect": "Allow", 
-                  "Resource": {
-                    "Fn::Join": [
-                      ":", 
-                      [
-                        "arn", 
-                        {
-                          "Ref": "AWS::Partition"
-                        }, 
-                        "s3", 
-                        "", 
-                        "", 
-                        {
-                          "Ref": "TranscriptionAudioFiles"
-                        }
-                      ]
-                    ]
-                  }, 
-                  "Action": [
-                    "s3:PutBucketNotification", 
-                    "s3:GetBucketNotification"
-                  ]
-                }, 
-                {
-                  "Effect": "Allow", 
-                  "Resource": {
-                    "Fn::Join": [
-                      ":", 
-                      [
-                        "arn", 
-                        {
-                          "Ref": "AWS::Partition"
-                        }, 
-                        "lambda", 
-                        {
-                          "Ref": "AWS::Region"
-                        }, 
-                        {
-                          "Ref": "AWS::AccountId"
-                        }, 
-                        "function", 
-                        "aws-icc-dev-transcribeJobProducer"
-                      ]
-                    ]
-                  }, 
-                  "Action": [
-                    "lambda:AddPermission", 
-                    "lambda:RemovePermission"
-                  ]
-                }, 
                 {
                   "Effect": "Allow", 
                   "Resource": {
@@ -1970,7 +1901,7 @@
         "MethodResponses": []
       }
     }, 
-    "ApiGatewayDeployment1596086636685": {
+    "ApiGatewayDeployment1606782183384": {
       "Type": "AWS::ApiGateway::Deployment", 
       "Properties": {
         "RestApiId": {
@@ -2215,6 +2146,26 @@
         }
       }
     }, 
+    "TranscribeJobProducerEventSourceMappingSQSAudioFilesQueue": {
+      "Type": "AWS::Lambda::EventSourceMapping", 
+      "DependsOn": "TranscribeS3DynamoDBRole", 
+      "Properties": {
+        "BatchSize": 10, 
+        "EventSourceArn": {
+          "Fn::GetAtt": [
+            "AudioFilesQueue", 
+            "Arn"
+          ]
+        }, 
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "TranscribeJobProducerLambdaFunction", 
+            "Arn"
+          ]
+        }, 
+        "Enabled": true
+      }
+    }, 
     "LambdaBasicExecutionRole": {
       "Type": "AWS::IAM::Role", 
       "Properties": {
@@ -2294,7 +2245,9 @@
                 {
                   "Effect": "Allow", 
                   "Action": [
-                    "dynamodb:Update*"
+                    "dynamodb:Update*", 
+                    "dynamodb:batchWrite", 
+                    "dynamodb:BatchWriteItem"
                   ], 
                   "Resource": [
                     {
@@ -2304,6 +2257,20 @@
                       ]
                     }
                   ]
+                }, 
+                {
+                  "Effect": "Allow", 
+                  "Action": [
+                    "sqs:GetQueueAttributes", 
+                    "sqs:DeleteMessage", 
+                    "sqs:ReceiveMessage"
+                  ], 
+                  "Resource": {
+                    "Fn::GetAtt": [
+                      "AudioFilesQueue", 
+                      "Arn"
+                    ]
+                  }
                 }, 
                 {
                   "Effect": "Allow", 
@@ -3087,6 +3054,23 @@
         }
       }
     }, 
+    "AudioFilesQueue": {
+      "Type": "AWS::SQS::Queue", 
+      "Properties": {
+        "QueueName": {
+          "Fn::Join": [
+            "", 
+            [
+              "audio-files-queue", 
+              "-dev-", 
+              {
+                "Ref": "ServicePrefix"
+              }
+            ]
+          ]
+        }
+      }
+    }, 
     "TranscriptionAudioFiles": {
       "Type": "AWS::S3::Bucket", 
       "Properties": {
@@ -3668,6 +3652,155 @@
         }
       }
     }, 
+    "S3NotificationLambdaFunction": {
+      "DependsOn": [
+        "NotificationLambdaIAMRole"
+      ], 
+      "Type": "AWS::Lambda::Function", 
+      "Properties": {
+        "Code": {
+          "ZipFile": "import json\nimport logging\nimport boto3\nimport os\n\nsqs = boto3.resource('sqs')\n\nlogger = logging.getLogger()\nlogger.setLevel(logging.INFO)\n\ndef lambda_handler(event,context):\n  queue_name = os.environ['QUEUE_NAME']\n  queue = sqs.get_queue_by_name(QueueName=queue_name)\n\n  response = queue.send_message(MessageBody='new file received',MessageAttributes={\n    'bucketName': {\n      'StringValue': event['Records'][0]['s3']['bucket']['name'],\n      'DataType': 'String'\n    },\n    'objectKey': {\n      'StringValue': event['Records'][0]['s3']['object']['key'],\n      'DataType': 'String'\n    },\n    'objectSize': {\n      'StringValue': str(event['Records'][0]['s3']['object']['size']),\n      'DataType': 'String'\n    }\n  })\n  logger.info('queue response {}'.format(response))\n"
+        }, 
+        "Environment": {
+          "Variables": {
+            "QUEUE_NAME": {
+              "Fn::GetAtt": [
+                "AudioFilesQueue", 
+                "QueueName"
+              ]
+            }
+          }
+        }, 
+        "Handler": "index.lambda_handler", 
+        "Role": {
+          "Fn::GetAtt": [
+            "NotificationLambdaIAMRole", 
+            "Arn"
+          ]
+        }, 
+        "Runtime": "python3.6", 
+        "Timeout": 5
+      }
+    }, 
+    "NotificationLambdaInvokePermission": {
+      "DependsOn": [
+        "TranscriptionAudioFiles"
+      ], 
+      "Type": "AWS::Lambda::Permission", 
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "S3NotificationLambdaFunction", 
+            "Arn"
+          ]
+        }, 
+        "Action": "lambda:InvokeFunction", 
+        "Principal": "s3.amazonaws.com", 
+        "SourceAccount": {
+          "Ref": "AWS::AccountId"
+        }, 
+        "SourceArn": {
+          "Fn::GetAtt": [
+            "TranscriptionAudioFiles", 
+            "Arn"
+          ]
+        }
+      }
+    }, 
+    "NotificationLambdaIAMRole": {
+      "Type": "AWS::IAM::Role", 
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17", 
+          "Statement": [
+            {
+              "Effect": "Allow", 
+              "Principal": {
+                "Service": [
+                  "lambda.amazonaws.com"
+                ]
+              }, 
+              "Action": [
+                "sts:AssumeRole"
+              ]
+            }
+          ]
+        }, 
+        "Path": "/", 
+        "Policies": [
+          {
+            "PolicyName": "root", 
+            "PolicyDocument": {
+              "Version": "2012-10-17", 
+              "Statement": [
+                {
+                  "Effect": "Allow", 
+                  "Action": [
+                    "s3:GetBucketNotification", 
+                    "s3:PutBucketNotification"
+                  ], 
+                  "Resource": "*"
+                }, 
+                {
+                  "Effect": "Allow", 
+                  "Action": [
+                    "sqs:*"
+                  ], 
+                  "Resource": "*"
+                }, 
+                {
+                  "Effect": "Allow", 
+                  "Action": [
+                    "logs:CreateLogGroup", 
+                    "logs:CreateLogStream", 
+                    "logs:PutLogEvents"
+                  ], 
+                  "Resource": "arn:aws:logs:*:*:*"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }, 
+    "CustomResourceLambdaFunction": {
+      "Type": "AWS::Lambda::Function", 
+      "Properties": {
+        "Handler": "index.lambda_handler", 
+        "Role": {
+          "Fn::GetAtt": [
+            "NotificationLambdaIAMRole", 
+            "Arn"
+          ]
+        }, 
+        "Code": {
+          "ZipFile": "from __future__ import print_function\nimport json\nimport boto3\nimport cfnresponse\n\nprint('Loading function')\n\ns3 = boto3.resource('s3')\n\ndef lambda_handler(event, context):\n    print(\"Received event: \" + json.dumps(event, indent=2))\n    responseData={}\n    try:\n        if event['RequestType'] == 'Delete':\n            print(\"Request Type:\",event['RequestType'])\n            Bucket=event['ResourceProperties']['Bucket']\n            delete_notification(Bucket)\n            print(\"Sending response to custom resource after Delete\")\n        elif event['RequestType'] == 'Create' or event['RequestType'] == 'Update':\n            print(\"Request Type:\",event['RequestType'])\n            LambdaArn=event['ResourceProperties']['LambdaArn']\n            Bucket=event['ResourceProperties']['Bucket']\n            add_notification(LambdaArn, Bucket)\n            responseData={'Bucket':Bucket}\n            print(\"Sending response to custom resource\")\n        responseStatus = cfnresponse.SUCCESS\n    except Exception as e:\n        print('Failed to process:', e)\n        responseStatus = cfnresponse.FAILED\n        responseData = {'Failure': 'Something bad happened.'}\n    cfnresponse.send(event, context, responseStatus, responseData)\n\ndef add_notification(LambdaArn, Bucket):\n    bucket_notification = s3.BucketNotification(Bucket)\n    response = bucket_notification.put(\n      NotificationConfiguration={\n        'LambdaFunctionConfigurations': [\n          {\n            'LambdaFunctionArn': LambdaArn,\n            'Events': [\n                's3:ObjectCreated:*'\n            ]\n            # 'Filter': {\n            # 'Key': {\n            #     'FilterRules': [\n            #       {\n            #         \"Name\": \"suffix\",\n            #         \"Value\": \".json\"\n            #       }\n            #     ]\n            #   }\n            # }\n          },\n          {\n            'LambdaFunctionArn': LambdaArn,\n            'Events': [\n                's3:ObjectCreated:*'\n            ]\n            # 'Filter': {\n            # 'Key': {\n            #     'FilterRules': [\n            #       {\n            #         'Name': 'suffix',\n            #         'Value': '.wav'\n            #       }\n            #     ]\n            #   }\n            # }\n          },\n          {\n            'LambdaFunctionArn': LambdaArn,\n            'Events': [\n                's3:ObjectCreated:*'\n            ]\n            # 'Filter': {\n            # 'Key': {\n            #     'FilterRules': [\n            #       {\n            #         'Name': 'suffix',\n            #         'Value': '.txt'\n            #       }\n            #     ]\n            #   }\n            # }\n          }\n        ]\n      }\n    )\n    print(\"Put request completed....\")\n\ndef delete_notification(Bucket):\n    bucket_notification = s3.BucketNotification(Bucket)\n    response = bucket_notification.put(\n        NotificationConfiguration={}\n    )\n    print(\"Delete request completed....\")\n"
+        }, 
+        "Runtime": "python3.6", 
+        "Timeout": 50
+      }
+    }, 
+    "LambdaTrigger": {
+      "Type": "Custom::LambdaTrigger", 
+      "DependsOn": "NotificationLambdaInvokePermission", 
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomResourceLambdaFunction", 
+            "Arn"
+          ]
+        }, 
+        "LambdaArn": {
+          "Fn::GetAtt": [
+            "S3NotificationLambdaFunction", 
+            "Arn"
+          ]
+        }, 
+        "Bucket": {
+          "Ref": "TranscriptionAudioFiles"
+        }
+      }
+    }, 
     "CleanUpS3Buckets": {
       "DependsOn": [
         "ComprehendCallResolutionBucket", 
@@ -4220,79 +4353,79 @@
     "TranscribeJobProducerLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "TranscribeJobProducerLambdaVersionfGLx0AoPFXO114mX2dmWys1vEpHYySjKOrrvKeZ7QWE"
+        "Ref": "TranscribeJobProducerLambdaVersion6Bz3RT9AzVYZGm8VvNpvb8fykHj73iuXjduJrTvbls"
       }
     }, 
     "SplitTranscriptLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "SplitTranscriptLambdaVersionrLyQ2ZKcXGYpwxvQZsgLtrcJb30tLHxFnwArv9rLzzE"
+        "Ref": "SplitTranscriptLambdaVersionfwv3OnZcTM1snBDGtXtZPq2OcUjgEPlSuwqQ5xzzv0"
       }
     }, 
     "AnalyseTextLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "AnalyseTextLambdaVersionTSZbL78hOevLeFM3N3zDhcMRErBRlAWf94wGYnhsYg"
+        "Ref": "AnalyseTextLambdaVersionRnfAyZTCDJcIT99Q8TFVFCuM49dLHbDmX3BvKvNc"
       }
     }, 
     "GetTranscriptsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "GetTranscriptsLambdaVersionYSS8oELNWGIpTOJ026iqhKtnOvs7letFaxlAKPcY"
+        "Ref": "GetTranscriptsLambdaVersionLB9w7S8PjEZTiQ8Ln6xlLBcbo2uzyqNu6mzJUOQpU"
       }
     }, 
     "GetAudioLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "GetAudioLambdaVersiono8FzcNaO5OrCSSfFtaXhDMcclWN5xACUuARyTQ5dq8"
+        "Ref": "GetAudioLambdaVersion7olk5oof3tFAF9Hck9fOAhqtgsyoNKu7YWY8KUVAnc"
       }
     }, 
     "GetSentimentLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "GetSentimentLambdaVersiongaTFSbZSdNBldxy3gevybaQpebE3JVV5btCfKIw"
+        "Ref": "GetSentimentLambdaVersionAooSDnNc7RsqVAcNBxSZX3bEHU1rFkZz80aLaeVIs"
       }
     }, 
     "GetPresignedUrlLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "GetPresignedUrlLambdaVersionlRbzvPOpI7IfpP2VlZHzgu8b3sD7JfW4BVwBt3jM4qg"
+        "Ref": "GetPresignedUrlLambdaVersiontzP5WWT0NAhi6sTVSm8IuxWoE9uFnp1KgDpDVM8Wo"
       }
     }, 
     "UpdateStatusLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "UpdateStatusLambdaVersion0IXiBdEpL8pfPOs18gCd4hLBVJi3vC7JeVm0AWGiHKk"
+        "Ref": "UpdateStatusLambdaVersion68v0l56j2rgw4WTjK7Oae9G7zIAhOtFpxU8a1PHsY"
       }
     }, 
     "QuickSightFederationFunctionLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "QuickSightFederationFunctionLambdaVersionJkkPej4bt8CRLSeWtJWlk2KGkptHKVSpTEmE5WqDoQ"
+        "Ref": "QuickSightFederationFunctionLambdaVersionfYUbzbyyQv20fNXdo0ZH6t1rSbz61UxT3kDnOg8A"
       }
     }, 
     "CreateCallResolutionClassiferLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "CreateCallResolutionClassiferLambdaVersionN4CPSBudK2f1SorGgqmcrN1Zj0tbtYgPvZsio2Rg"
+        "Ref": "CreateCallResolutionClassiferLambdaVersionEOZnnpqbYi0N8AcoSkhsPTgbC3I4Jcp5OGr7xSgLg"
       }
     }, 
     "CreateCallMotivationClassifierLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "CreateCallMotivationClassifierLambdaVersionwpMOUxEI0lCOg3b4wGHUqfa5fV0A7gJsUP5xnekQxAc"
+        "Ref": "CreateCallMotivationClassifierLambdaVersionBmCY5HQ00332pKW4qjbe2rZQeVpPuYxq24dPjSU"
       }
     }, 
     "CreateCallResolutionEndpointLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "CreateCallResolutionEndpointLambdaVersion1AdWN6vbKQbhOiHa42tmeWUBjVB0H3rjJstM6SxeNY"
+        "Ref": "CreateCallResolutionEndpointLambdaVersion1gjMjdfDsIxDOWQSHAhhWBNcgseqD7hz7E1bYx0Jms"
       }
     }, 
     "CreateCallMotivationEndpointLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version", 
       "Value": {
-        "Ref": "CreateCallMotivationEndpointLambdaVersiongEAG5FmlWvewm7N9uVetPhOPpuuoT0tEFLMe8Kk8"
+        "Ref": "CreateCallMotivationEndpointLambdaVersion0fpOI9EivyJmigJT5uo1vMRnGYYvYrlkjcq54Lys"
       }
     }, 
     "ServiceEndpoint": {
@@ -4502,6 +4635,18 @@
     "QSS3KeyPrefix": {
       "Type": "String", 
       "Default": "quickstart-onica-post-call-analytics/"
+    }, 
+    "ModeOfOperation": {
+      "Type": "String", 
+      "Default": "AUDIO"
+    }, 
+    "MetadataOrAudioSuffix": {
+      "Type": "String", 
+      "Default": ""
+    }, 
+    "AudioFileJsonPath": {
+      "Type": "String", 
+      "Default": ""
     }, 
     "ServerlessDeploymentBucket": {
       "Default": "", 
