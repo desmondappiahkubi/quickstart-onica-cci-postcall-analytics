@@ -20,7 +20,7 @@
     "axios": "^0.19.2",
     "file-type": "^14.1.2",
     "jsonpath": "^1.0.2",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "middy": "^0.34.0",
     "moment": "^2.24.0",
     "react": "^16.12.0",
